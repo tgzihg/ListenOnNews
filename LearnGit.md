@@ -132,3 +132,7 @@ git merge
 可以在网页中修改文件，模拟另外开发者的行为，在本地的git history中是看不到远端master的修改的。
 
 用`git fetch`获取远端的版本。
+
+用`git merge origin/master`将远端的版本合并到本地master。
+
+以上操作加起来就相当于`git pull`了。
