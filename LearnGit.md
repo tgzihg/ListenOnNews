@@ -112,3 +112,6 @@ git checkout master
 git merge b1
 ```
 即可将b1合并到master中。
+
+### 问题
+如果有两个分支：b1和b2，独立开发。b1开发后。将自己合并到了master分支中，然而b2并不知道，也想将自己merge进master中。此时会发生冲突，需要选择版本。不妥。合适的解决方法是先将master主线merge进自己。然后修改conflict，之后再将自己b2合并到master中。没有conflict。
