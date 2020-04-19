@@ -131,4 +131,4 @@ git merge
 ```
 可以在网页中修改文件，模拟另外开发者的行为，在本地的git history中是看不到远端master的修改的。
 
-用`git fetch`获取远端的版本
+用`git fetch`获取远端的版本。
