@@ -1,4 +1,5 @@
 # 学习Github和Git命令
+[toc]
 ## 事前：VSCode插件推荐安装
 gitlens和git history
 ## 入门
@@ -27,11 +28,12 @@ git remote add origin https://github.com/XXX/YYY.git
 ```
 git push -u origin master
 ```
-### 注意一些问题：
+### 注意：
+- 三个区：工作区->缓冲区->归档区--*remote*-->远程仓库
 - 归档区一定要有的，本地的代码归档是非常必要的，远端仓库其实并不重要。
 - 缓冲区的必要性：如果连续多次将本地文件添加到缓冲区，即多次执行*add*，然后可以执行一次commit，将所有内容添加到归档区。
 ## 其它
-- 查看当前本地git仓库状态：
+查看当前本地git仓库状态：
 ```
 git status
 ```
@@ -56,7 +58,23 @@ git push origin master
 将本地归档区上传到远端仓库。
 
 ## 代码的回滚
-通过git插件，上方的*Git:View History*打开Git历史图形界面，可以看到该项目的一些版本。通过下述命令可以将项目的*归档区*回滚到HASHCODE对应的提交版本中。mixed会将归档区和缓冲区都进行了回滚。
+通过git插件，上方的*Git:View History*打开Git历史图形界面，可以看到该项目的一些版本。
+
+通过*混合回滚*命令可以将项目的*归档区和缓冲区*回滚到HASHCODE对应的提交版本中。
 ```
 git reset --mixed *HASHCODE*
 ```
+查看操作的记录，可以查看对应之前版本的hash码：
+```
+git reflog
+```
+硬回滚，将*归档区、缓冲区、工作区*全部进行回滚：
+```
+git reset --hard *HASHCODE*
+```
+将缓冲区和归档区全部更新到指定的版本呢。
+软回滚：
+```
+git reset --soft *HASHCODE*
+```
+将归档区进行了回滚，但是工作区和缓冲区不操作。
