@@ -47,4 +47,10 @@ git add .
 ```
 git commit -m "XXX"
 ```
-将所有改动一次提交
+将所有改动一次提交到本地归档区
+
+使用
+```
+git push origin master
+```
+将本地归档区上传到远端仓库。
