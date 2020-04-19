@@ -56,3 +56,4 @@ git push origin master
 将本地归档区上传到远端仓库。
 
 ## 代码的回滚
+通过git插件，上方的*Git:View History*打开Git历史图形界面，可以看到该项目的一些版本。
