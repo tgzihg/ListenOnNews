@@ -105,3 +105,9 @@ git checkout b1
 进入到b1分支。
 
 之后就可以在分支中自行开发。也可以在git history中查看b1分支的线。
+
+b1分支开发完成后，先切换到master分支，然后将b1的改动合并到master中。
+```
+git checkout master
+git merge b1
+```
