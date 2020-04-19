@@ -72,9 +72,7 @@ git reflog
 ```
 git reset --hard *HASHCODE*
 ```
-将缓冲区和归档区全部更新到指定的版本呢。
-软回滚：
+软回滚，只将归档区进行了回滚，但是工作区和缓冲区不操作：
 ```
 git reset --soft *HASHCODE*
 ```
-将归档区进行了回滚，但是工作区和缓冲区不操作。
