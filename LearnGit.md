@@ -94,8 +94,8 @@ git branch -v
 
 通过
 ```
-git branch b1
+git checkout -b b1
 ```
-进入到b1分支，如果没有对应分支则创立。
+创建并进入到b1分支，如果没有对应分支则创立。
 
 进入到b1分支后就可以自行开发。可以在git history中查看b1分支的线。
