@@ -10,6 +10,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+
 # 主函数
 if __name__ == "__main__":
     # 每天早上八点推送
