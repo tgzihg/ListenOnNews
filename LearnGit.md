@@ -56,7 +56,7 @@ git push origin master
 将本地归档区上传到远端仓库。
 
 ## 代码的回滚
-通过git插件，上方的*Git:View History*打开Git历史图形界面，可以看到该项目的一些版本。通过下述命令可以将项目的*归档区*回滚到HASHCODE对应的提交版本中。也将缓冲区进行了回滚。
+通过git插件，上方的*Git:View History*打开Git历史图形界面，可以看到该项目的一些版本。通过下述命令可以将项目的*归档区*回滚到HASHCODE对应的提交版本中。mixed会将归档区和缓冲区都进行了回滚。
 ```
 git reset --mixed *HASHCODE*
 ```
