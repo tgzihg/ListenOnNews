@@ -138,3 +138,5 @@ git merge
 以上操作加起来就相当于`git pull`了。
 
 *git fetch*和*git pull*实现和远端仓库的同步。
+
+可以通过*git fetch*获得远端的其它分支情况，然后本地切换到那个分支，进行操作。
