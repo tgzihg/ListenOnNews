@@ -142,3 +142,18 @@ git merge
 可以通过*git fetch*获得远端的其它分支情况，然后本地切换到那个分支，进行操作。
 
 修改完之后再将分支push到远端即可。
+
+## Pull request
+分支/forker可以申请提交pull，此时原作者会看到你的申请，审核后会将你并入到master中。
+
+## SSH链接方式
+在本机的*git bash*中运行*ssh-keygen.exe*，一路回车。进入文件夹中打开*id_rsa.pub*。复制该行内容，并在github上的setting中添加ssh，将密钥复制保存即可。
+
+在仓库页，使用ssh，复制ssh那一行的内容。
+
+本地上运行：
+```
+git remote -v               //查看远程仓库名称及其路径
+git remote remove origin    //删除origin
+git remote add origin git@github.com:XXX/YYY.git    //用ssh添加仓库
+```
