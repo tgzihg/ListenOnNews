@@ -136,3 +136,5 @@ git merge
 用`git merge origin/master`将远端的版本合并到本地master。
 
 以上操作加起来就相当于`git pull`了。
+
+*git fetch*和*git pull*实现和远端仓库的同步。
