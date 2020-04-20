@@ -157,3 +157,5 @@ git remote -v               //查看远程仓库名称及其路径
 git remote remove origin    //删除origin
 git remote add origin git@github.com:XXX/YYY.git    //用ssh添加仓库
 ```
+
+使用ssh后以后就可以不用输入用户名密码验证了。
