@@ -33,10 +33,6 @@ if __name__ == "__main__":
         # 提取信息 用xpath！
         html = etree.HTML(content)
         title = html.xpath("//title/text()")
-        #print("网站标题：",end="")
-        #print(title)
-        #print("公告：")
-        # 经过漫长时间的摸索··终于找到了合适的xpath提取表达式
         NewsList = html.xpath("//div[@class=\"view-content\"][1]//li/span/a")
         AutorList = html.xpath("//div[@class=\"view-content\"][1]//li/div/span/a")
         DateList = html.xpath("//div[@class=\"view-content\"][1]//li/div/span/text()")
@@ -69,13 +65,6 @@ if __name__ == "__main__":
             index+=1
             if index==30:
                 break
-        
-        # 看到了么？这样就可以把新闻提取出来
-        # 这个只是原始数据，你可以把这些信息进一步处理，比如发邮件（每天给你发一次，然后不会错过每日新闻）
-        # 发邮件也就用到了Python的其它模块
-        
-        # 如果你想发邮件的话，就套用这个模板吧，这个东西不需要记忆，填空题。
-        # 现在看一下如果写错了密码会怎么样
         
         #发送者邮箱
         sender = "xxx@qq.com"
